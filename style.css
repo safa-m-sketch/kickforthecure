@@ -1,0 +1,132 @@
+body{
+  background-color: #d1f6ff !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.125rem !important;
+  color:  #102e70 !important;
+}
+h1{
+  text-align: center !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  color: #c32222 !important;
+}
+header{
+  display: flex !important;
+  align-items: center !important;
+  gap: 30px !important;
+  background-color: #f3afaf !important;
+  /* padding: 20px; */
+}
+nav{
+  background-color: #fcd4da !important;
+  display: inline-block !important;
+  width: 80% !important;
+}
+nav img{
+  width: 10% !important;
+}
+main{
+  background-color: #d1f6ff !important;
+}
+nav ul{
+  display: flex !important;
+  justify-content: space-around !important;
+  list-style-type: none !important;
+}
+nav a {
+  text-decoration: none !important;
+  font-weight: bold !important;
+  color: #172778 !important;
+  transition: color 0.3s ease !important;
+  padding: 10px !important;
+  border: solid 5px #fb9393 !important;
+  display: inline-block !important;
+  background-color: #d1f6ff !important;
+}
+nav a:hover {
+  color: #ff4b88 !important;
+}
+
+.grid{
+  display:grid !important;
+  grid-template-columns: 30% 30% 30% !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  row-gap: 5px !important;
+}
+.grid img{
+  width:100% !important;
+  height: auto !important;
+  display: block !important;
+}
+.grid img:nth-child(odd){
+  border: 8px solid #c32222 !important;
+}
+.grid img:nth-child(even){
+  border: 8px solid #ff4b88 !important;
+}
+.skip-link {
+  position: absolute !important;
+  top: -50px !important; /* Hide offscreen */
+  left: 0 !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  padding: 10px 15px !important;
+  font-weight: bold !important;
+  border: 2px solid #000 !important;
+  z-index: 1000 !important;
+  transition: top 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+.skip-link:focus {
+  top: 10px !important; /* Slide into view when focused */
+}
+img{
+  padding: 5px !important;
+  border-radius: 10px !important;
+}
+#container{
+  min-height: 100vh !important;
+  margin-bottom: -75px !important;
+}
+#container:after{
+  content: "" !important;
+  display: block !important;
+  height: 75px !important;
+}
+footer{
+  text-align: center !important;
+}
+.carousel-wrapper{
+  max-width: 300px;
+}
+body, .about-section {
+  font-size: 1.25rem !important;
+  color: #102e70;
+  font-family:i 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.google-form {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 600px){
+  .grid{
+    grid-template-columns: 45% 45% !important;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .google-form {
+    width: 100% !important;
+    height: 600px !important;
+  }
+}
+@media (min-width: 772px){
+  .google-form{
+    width:640px;
+    height:983px;
+  }
+}
